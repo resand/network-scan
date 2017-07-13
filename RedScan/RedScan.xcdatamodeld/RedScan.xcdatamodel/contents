@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Xcode 8.0" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DeviceNetwork" representedClassName=".DeviceNetwork" syncable="YES">
+        <attribute name="ip" attributeType="String" syncable="YES"/>
+        <attribute name="mac" attributeType="String" syncable="YES"/>
+        <attribute name="maker" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="network" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Network" inverseName="devices" inverseEntity="Network" syncable="YES"/>
+    </entity>
+    <entity name="Network" representedClassName=".Network" syncable="YES">
+        <attribute name="mac" attributeType="String" syncable="YES"/>
+        <attribute name="maker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeviceNetwork" inverseName="network" inverseEntity="DeviceNetwork" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DeviceNetwork" positionX="-36" positionY="36" width="128" height="120"/>
+        <element name="Network" positionX="-54" positionY="-9" width="128" height="120"/>
+    </elements>
+</model>

@@ -1,0 +1,27 @@
+PODS:
+  - CoreDataHelper (1.1)
+  - IQKeyboardManagerSwift (4.0.9)
+  - LNRSimpleNotifications (0.6.1)
+  - MGSwipeTableCell (1.5.6)
+  - MMLanScan (2.1.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - CoreDataHelper
+  - IQKeyboardManagerSwift
+  - LNRSimpleNotifications
+  - MGSwipeTableCell
+  - MMLanScan
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CoreDataHelper: 8327f621f930f4564cd5da8184fb87d0def0a63f
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  LNRSimpleNotifications: 4602ddc63444b42b1653681730678af1585c5fa3
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  MMLanScan: dee389a3cc85166187f66a4037ff24dc88922d00
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 573a0a6957b3857bc0faf7b6ca32fe4fde7c9b9e
+
+COCOAPODS: 1.2.1
